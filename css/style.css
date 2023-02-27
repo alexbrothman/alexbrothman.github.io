@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2vmin;
+  padding-left: 3vmin;
+  padding-right: 3vmin;
+}
+
+nav {
+  padding-top: 2vh;
+}
+
+.content {
+  min-height: calc(100vh - 75px);
+}
+
+.main {
+  max-width: 100%;
+  height: 60vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: black;
+  -webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+  animation-name: fade;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fade {
+    from {background-color: white;}
+    to {background-color: black;}
+}
+
+/* Standard syntax */
+@keyframes fade {
+    from {background-color: white;}
+    to {background-color: black;}
+}
+
+.no-bullets li:before {
+  content: "/// ";
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+footer {
+    height: 25px;
+}
